@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "lawscape",
+  "description": "Law Search Extension",
+  "version": "0.1.0",
+  "permissions": ["contextMenus", "activeTab", "storage", "scripting"],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_popup": "src/popup.html"
+  },
+  "host_permissions": ["http://202.222.11.111"]
+}
