@@ -10,5 +10,11 @@
   "action": {
     "default_popup": "src/popup.html"
   },
-  "host_permissions": ["http://202.222.11.111"]
+  "host_permissions": ["http://202.222.11.111"],
+  "icons": {
+    "16": "icon/16x16.png",
+    "32": "icon/32x32.png",
+    "48": "icon/48x48.png",
+    "128": "icon/128x128.png"
+  }
 }

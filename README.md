@@ -1,3 +1,5 @@
+<img src="./icon/icon.svg" alt="lawscape logo" width="130" align="right" />
+
 # lawscape
 
 関連する法律文書の検索を行うchrome拡張です。
