@@ -14,6 +14,8 @@
 git clone https://github.com/lawscape/lawscape.git
 ```
 
+![](./example/load.png)
+
 # 使用例
 
 ![](./example/example1.png)
