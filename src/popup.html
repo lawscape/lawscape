@@ -7,16 +7,25 @@
     <style>
         body { font-family: Arial, sans-serif; padding: 10px; width: 300px; }
         input, select { width: calc(100% - 20px); padding: 5px; margin-bottom: 10px; }
+        li { margin-top: 8px; margin-bottom: 8px; }
         button { width: 100%; padding: 5px; cursor: pointer; }
         #results { margin-top: 10px; }
+        .legal_document { margin-top: 20px; margin-bottom: 20px; }
         .slider-container { margin-top: 10px; }
+        .slider { margin-bottom: 20px; }
     </style>
 </head>
 <body>
     <label>検索単語<input type="text" id="searchBox" placeholder="検索ワードを入力">
     <div class="slider-container"></label>
-        <label>類似度の足切り<input type="number" id="cancelScore" min="0" max="1" step="0.01"> <input type="range" id="cancelScoreSlider" min="0" max="1" step="0.01"></label>
-        <label>検索数<input type="number" id="limit" min="10" max="500" step="1"> <input type="range" id="limitSlider" min="10" max="500" step="1"></label>
+        <details class="slider">
+            <summary>類似度の足切り</summary>
+            <input type="number" id="cancelScore" min="0" max="1" step="0.01"> <input type="range" id="cancelScoreSlider" min="0" max="1" step="0.01">
+        </details>
+        <details class="slider">
+            <summary>検索数</summary>
+            <input type="number" id="limit" min="10" max="500" step="1"> <input type="range" id="limitSlider" min="10" max="500" step="1">
+        </details>
     </div>
     <button id="searchButton">検索</button>
     <div id="results"></div>
